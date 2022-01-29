@@ -1,0 +1,150 @@
+.wrapper {
+    margin: 0 auto;
+}
+
+header {
+    background: #0033CC;
+    margin: 10pt;
+    font-family: 'Arial',sans-serif;
+}
+
+header h1 {
+    position: absolute;
+    top: 15pt;
+    left: 25pt;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    display: flex;
+    margin: 10pt;
+}
+
+.main {
+    background: white;
+    width: 80%;
+}
+
+.main h1:first-letter {
+    font-size: 1.8em;
+    color: #0033CC;
+  }
+
+.main h1 {
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-left: 10pt;
+    margin-bottom: 10pt;
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
+.main h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 10pt;
+    color: #505050;/*文字色*/
+    padding: 0.5em;/*文字周りの余白*/
+    display: inline-block;/*おまじない*/
+    line-height: 1;/*行高*/
+    background: #a7d6ff;/*背景色*/
+    vertical-align: middle;
+    border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+  }
+  
+.main h2:before {
+    content: '●';
+    color: white;
+    margin-right: 8px;
+}
+
+.main h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: solid 3px black;
+    margin-left: 15pt;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.main ol li {
+    line-height: 1.5;
+    margin: 10pt;
+    margin-left: 20pt;
+}
+
+.side {
+    background: white;
+    width: 20%;
+}
+
+.side ul {
+    padding: 0;
+}
+
+.side ul li {
+    color: #404040;
+    border-left: solid 6px #0033CC;/*左側の線*/
+    border-bottom: solid 2px #dadada;/*下に灰色線*/
+    background: whitesmoke;
+    margin-top: 5pt;
+    margin-left: 5pt;
+    margin-bottom: 5pt;/*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+    font-weight: bold;
+}
+
+footer {
+    background:#0033CC;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    text-align: right;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Arial',sans-serif;
+    color: white;
+}
+
+footer ol {
+    margin: 10pt;
+}
+
+.accordion h3 {
+    cursor: pointer;
+}
+
+.accordion h3:hover{
+    color: blue;
+    border-bottom-color: blue;
+}
+.accordion ol {
+    display: none;
+}
+
+.slideshow {
+    margin-left: 15%;
+    width: 70%;
+}
+
+.bx-wrapper {
+    border: none;
+}
+
+@media (max-width: 600px){
+    .container {
+        flex-direction: column;
+    }
+    .main,
+    .side {
+        width: 100%;
+    }
+}

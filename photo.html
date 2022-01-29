@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>mizuta's webpage</title>
+
+        <!-- CSS -->
+        <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <link rel='stylesheet' href="css/style.css">
+
+        <!-- Slideshow: bxSlider-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+            $('.bxslider').bxSlider();
+            });
+        </script>
+
+        <script>
+            $(document).ready(function(){
+            $('.headslider').bxSlider({
+                auto: true,
+                mode: 'fade',
+                speed: 2000,
+                pause: 8000,
+                pager: false,
+                controls: false
+            });
+            });
+        </script>
+    </head>
+
+    
+
+
+    <body>
+
+        <div class="wrapper">
+            <header>
+                <img src='./images/sf1.png' alt='HEADER' width=100% height=100%/>
+                <h1> Kaoru Mizuta's <br /> Webpage</h1>
+            </header>
+
+            <div class="container">
+                <div class="main">
+                    <h1>Photos</h1>
+                    <div>
+                        <h2>2020</h2>
+
+                        <div>
+                            <h3 id='Denver'>Denver / Berkeley, United States (March)</h3>
+                            <ol>
+                                <li>
+                                    After arriving at Denver, APS meeting was cancelled.
+                                </li>
+                            </ol>
+
+                            <div class='slideshow'>
+                                <ul class='bxslider'>
+                                    <li><img src='./images/dv1.JPG'/></li>
+                                    <li><img src='./images/dv2.JPG'/></li>
+                                    <li><img src='./images/dv3.JPG'/></li>
+                                    <li><img src='./images/dv4.JPG'/></li>
+                                    <li><img src='./images/bk1.JPG'/></li>
+                                    <li><img src='./images/bk2.JPG'/></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        
+                        <h2>2019</h2>
+                        
+                        <div>
+                            <h3 id='Krakow'>Krakow, Poland (September)</h3>
+
+                            <div class="slideshow">
+                                <ul class="bxslider">
+                                    <li><img src="./images/krk1.JPG"/></li>
+                                    <li><img src="./images/krk2.JPG"/></li>
+                                    <li><img src="./images/krk3.JPG"/></li>
+                                    <li><img src="./images/krk4.JPG"/></li>
+                                    <li><img src="./images/krk5.JPG"/></li>
+                                    <li><img src="./images/krk6.JPG"/></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 id='Boston'>Boston, United States (March)</h3>
+
+                            <div class="slideshow">
+                                <ul class="bxslider">
+                                    <li><img src="./images/bos1.JPG"/></li>
+                                    <li><img src="./images/bos2.JPG"/></li>
+                                    <li><img src="./images/bos3.JPG"/></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h2>2018</h2>
+                        
+                        <div>
+                            <h3 id='SanFrancisco'>San Francisco, United States (July)</h3>
+                            
+                            <div class="slideshow">
+                                <ul class="bxslider">
+                                    <li><img src="./images/sf1.JPG"/></li>
+                                    <li><img src="./images/sf2.JPG"/></li>
+                                    <li><img src="./images/sf3.JPG"/></li>
+                                    <li><img src="./images/sf6.JPG"/></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="side">
+                    <ul>
+                        <li><a href='index.html'>Home</a></li>
+                        <li><a href='./publication.html'>Publications</a></li>
+                        <li><a href='./presentation.html'>Presentations</a></li>
+                        <li><a href='./cv.html'>CV</a></li>
+                        <li>Photos</li>
+                        <li><a href="./link.html">Link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer>
+                <ol>
+                    <li>
+                        Kaoru Mizuta<br />
+                        Condensed Matter Theory Group<br />
+                        Department of Physics, Kyoto University
+                    </li>
+                </ol>
+            </footer>
+
+        </div>
+    </body>
+</html>

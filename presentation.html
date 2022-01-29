@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>mizuta's webpage</title>
+
+        <!-- CSS -->
+        <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <link rel='stylesheet' href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <script>
+                $(function(){
+                  //.accordion1の中のp要素がクリックされたら
+                  $('.accordion h3').click(function(){
+                    //クリックされた.accordion1の中のp要素に隣接するul要素が開いたり閉じたりする。
+                    $(this).next('ol').slideToggle();
+                  });
+                });
+        </script>
+    </head>
+
+    
+
+
+    <body>
+
+        <div class="wrapper">
+            <header>    
+                <img src='./images/sf1.png' alt='HEADER' width=100% height=100%/>
+                <h1> Kaoru Mizuta's <br /> Webpage</h1>
+            </header>
+
+            <div class="container">
+
+                <div class="main">
+                    <h1>Presentations</h1>
+                    
+                    <div>
+                        <h2>International Conference</h2>
+
+                        <ul class="accordion">
+                            <li>
+                                <h3>Oral</h3>
+
+                                <ol>
+                                    <li>
+                                        Title: Liouvillianity breaking in dissipative interacting Floquet systems under high-frequency drive<br />
+                                        Conference: APS March Meeting 2021<br />
+                                        Place: Online<br />
+                                        Date: 15-19, March 2021
+                                    </li>
+
+                                    <li>
+                                        Title: High-frequency expansions for prethermal discrete time crystals<br />
+                                        Conference: <a href='https://timecrystals2019.org'>Time Crystals and Related Phenomena</a> <br />
+                                        Place: Jagiellonian University, <a href='./photo.html#Krakow'>Krakow, Poland</a> <br />
+                                        Date: 4-6, September 2019
+                                    </li>
+
+                                    <li>
+                                        Title: Spatial-translation-induced discrete time crystals<br />
+                                        Conference: APS March Meeting 2019<br />
+                                        Place: Boston Convention and Exibition Center, <a href='./photo.html#Boston'>Boston, United States</a><br />
+                                        Date: 4-8, March 2019
+                                    </li>
+
+                                    <li>
+                                        Title: Spatial-Translation-Induced Floquet Time Crystals<br />
+                                        Conference: <a href="http://www.nt.phys.s.u-tokyo.ac.jp/floquet/home">YITP Workshop "Floquet Theory: Fundamentals and Applications"</a><br />
+                                        Place: Kyoto University, Kyoto, Japan<br />
+                                        Date: 9-20, April 2018
+                                    </li>
+                                </ol>
+                            </li>
+                        
+
+                            <li>
+                                <h3>Poster</h3>
+                                <ol>
+                                    <li>
+                                        Title: Floquet engineering of topological phases protected by emergent symmetries<br />
+                                        Conference: <a href="http://topo-mat-sci.jp/meetings/topomat2019/index.html">International Conference on Topological Materials Science 2019</a><br />
+                                        Place: Kyoto University, Kyoto, Japan<br />
+                                        Date: 3-7, December, 2019
+                                    </li>
+
+                                    <li>
+                                        Title: Floquet engineering with resonant drives: Control of symmetry-protected topological phases<br />
+                                        Conference: <a href="http://cond.scphys.kyoto-u.ac.jp/~swiss-japan_2019/index.php">Trends in Theory of Correlated Materials 2019</a><br />
+                                        Place: Kyoto University, Kyoto, Japan<br />
+                                        Date: 7-9, October, 2019
+                                    </li>
+
+                                    <li>
+                                        Title: Emergence of robust symmetries in Floquet prethermal phases under a resonant drive<br />
+                                        Conference: <a href="https://exa.phys.s.u-tokyo.ac.jp/fsp/">Frontier of Statistical Physics 2019</a><br />
+                                        Place: University of Tokyo, Tokyo, Japan<br />
+                                        Date: 7-8, June 2019
+                                    </li>
+
+                                    <li>
+                                        Title: Floquet prethermal phases with emergent symmetries under a resonant drive<br />
+                                        Conference: <a href="https://www.cems.riken.jp/2019cems-sympo/">CEMS symposium on Emergent Quantum Materials</a><br />
+                                        Place: University of Tokyo, Tokyo, Japan<br />
+                                        Date: 22-24, May, 2019
+                                    </li>
+
+                                    <li>
+                                        Title: Time crystals realized by spatial translation and its symmetry breaking<br />
+                                        Conference: <a href="http://www.icm2018sf.org">International Conference on Magnetism 2018</a><br />
+                                        Place: Moscone Center, <a href='./photo.html#SanFrancisco'>San Francisco, United States</a><br />
+                                        Date: 15-20, July, 2018
+                                    </li>
+
+                                    <li>
+                                        Title: Spatial-Translation-Induced Topologically Trivial Time Crystals<br />
+                                        Conference: <a href="http://topo-mat-sci.jp/meetings/tms-epiqs-2/index.html">TMS-EPiQS 2nd Alliance Workshop: Topological magnets and topological superconductors</a><br />
+                                        Place: Kyoto University, Kyoto, Japan<br />
+                                        Date: 10-14, January, 2018
+                                    </li>
+
+                                    <li>
+                                        Title: Time Crystals realized by Spontaneous Symmetry Breaking<br />
+                                        Conference: <a href="http://www.oxidesuperspin.jp/oss2017/index.html">Oxide Superspin 2017</a><br />
+                                        Place: Kyoto University, Kyoto, Japan<br />
+                                        Date: 25-29, November, 2017
+                                    </li>
+
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2>Domestic Conference</h2>
+                        <ul class='accordion'>
+                            <li>
+                                <h3>Oral</h3>
+    
+                                <ol>
+                                    <li>
+                                        題名: 高周波駆動下の開放Floquet多体系におけるLiouvillianityの破れ<br />
+                                        会議: 日本物理学会 第76回年次大会<br />
+                                        場所: オンライン<br />
+                                        日時: 2021年3月12-15日
+                                    </li>
+
+                                    <li>
+                                        題名: Rydberg blockade下のFloquet多体scar固有状態<br />
+                                        会議: 日本物理学会 2020年秋季大会<br />
+                                        場所: オンライン<br />
+                                        日時: 2020年9月8-11日
+                                    </li>
+
+                                    <li>
+                                        題名: 共鳴的駆動下のFloquet系のプレサーマリゼーションとFloquetエンジニアリング<br />
+                                        会議: 日本物理学会 2019年秋季大会<br />
+                                        場所: 岐阜大学<br />
+                                        日時: 2019年9月10-13日
+                                    </li>
+                                    
+                                    <li>
+                                        題名: 共鳴的駆動下のFloquet系のプレサーマリゼーションと時間結晶の有効理論<br />
+                                        会議: 日本物理学会 2019年秋季大会<br />
+                                        場所: 岐阜大学<br />
+                                        日時: 2019年9月10-13日
+                                    </li>
+
+                                    <li>
+                                        題名: 空間並進誘起時間結晶<br />
+                                        会議: 日本物理学会 2018年秋季大会<br />
+                                        場所: 同志社大学 京田辺キャンパス<br />
+                                        日時: 2018年9月9-12日
+                                    </li>
+
+                                    <li>
+                                        題名: 空間並進による離散時間結晶<br />
+                                        会議: <a href="http://www.qi.t.u-tokyo.ac.jp/workshop/NQuIC2018/">量子情報・物性の新潮流</a> <br />
+                                        場所: 物性研究所、東京大学 柏キャンパス <br />
+                                        日時: 2018年7月31日-8月3日
+                                    </li>
+                                </ol>
+                            </li>
+    
+                            <li>
+                                <h3>Poster</h3>
+
+                                <ol>
+                                    <li>
+                                        題名: Liouvillianity breaking in Floquet-Lindblad systems under high-frequency drive<br />
+                                        会議: 第2回冷却原子研究会「アトムの会」<br />
+                                        場所: オンライン<br />
+                                        日時: 2020年9月28,29日
+                                    </li>
+
+                                    <li>
+                                        題名: プレサーマルな離散時間結晶における高周波展開<br />
+                                        会議: 日本物理学会第74回年次大会<br />
+                                        場所: 九州大学 伊都キャンパス<br />
+                                        日時: 2019年3月14-17日
+                                    </li>
+
+                                    <li>
+                                        題名: 非局所の対称性の破れと対象操作による時間結晶<br />
+                                        会議: 非平衡系・非エルミート系の新奇量子現象<br />
+                                        場所: 基礎物理学研究所、京都大学 吉田キャンパス<br />
+                                        日時: 2019年11月30日,12月1日
+                                    </li>
+
+                                    <li>
+                                        題名: 周期駆動非平衡下で実現される空間並進誘起の時間結晶<br />
+                                        会議: 日本物理学会第73回年次大会<br />
+                                        場所: 東京理科大学 野田キャンパス<br />
+                                        日時: 2018年3月22-25日
+                                    </li>
+
+                                    <li>
+                                        題名: 周期駆動非平衡系で実現される時間結晶の安定性<br />
+                                        会議: 第11回領域横断研究会<br />
+                                        場所: 物性研究所、東京大学 柏キャンパス<br />
+                                        日時: 2017年11月17,18日
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h2>Others</h2>
+
+                        <ul class="accordion">
+                            <li>
+                                <h3>Oral</h3>
+
+                                <ol>
+                                    <li>
+                                        題名: Liouvillianity breaking in interacting Floquet-Lindblad systems under high-frequency drive<br />
+                                        場所: <a href='https://patricia.ph.tsukuba.ac.jp/2020/12/05/bec-seminar-ja-mizuta/'>筑波大学　初貝研究室 CMT セミナー (Online)</a><br />
+                                        日時: 2020年12月18日
+                                    
+                                    </li>
+
+                                    <li>
+                                        題名: Floquet engineering with emergent symmetries: Control of symmetry protected topological phases<br />
+                                        場所: <a href='https://cmt.berkeley.edu/2020/03/06/special-qm-amo-joint-seminar-speakers-kaoru-mizuta-yoshihiro-michishita-kyoto-university-monday-march-9-415-pm-in-375-le-conte/'>University of California, Berkeley, Prof. Joel Moore's Group, Special QM/AMO Seminar</a><br />
+                                        日時: 2020年3月6日
+                                    </li>
+
+                                    <li>
+                                        題名: 周期駆動非平衡系における時間結晶に関する理論的研究<br />
+                                        会議: 第1回卓越カフェ<br />
+                                        場所: 京都大学 桂キャンパス<br />
+                                        日時: 2019年11月11日
+                                    </li>
+                                </ol>
+                            </li>
+                            
+                            <li>
+                                <h3>Poster</h3>
+
+                                <ol>
+                                    <li>
+                                        題名: Topological phases and Time crystals in prethermalized Floquet systems<br />
+                                        会議: Kyoto University International Seminar Dojo<br />
+                                        場所: シーサイドホテル舞子ビラ神戸<br />
+                                        日時: 2019年9月26,27日
+                                    </li>
+                                
+                                    <li>
+                                        題名: Floquet理論と光誘起相転移<br />
+                                        会議: 第62回物性若手夏の学校<br />
+                                        場所: 長良川ホテルパーク、岐阜 <br />
+                                        日時: 2017年7月25-29日
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            
+        
+                <div class="side">
+                    <ul>
+                        <li><a href='index.html'>Home</a></li>
+                        <li><a href='publication.html'>Publications</a></li>
+                        <li>Presentations</li>
+                        <li><a href='./cv.html'>CV</a></li>
+                        <li><a href='./photo.html'>Photos</a></li>
+                        <li><a href="./link.html">Link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+           
+            <footer>
+                <ol>
+                    <li>
+                        Kaoru Mizuta<br />
+                        Condensed Matter Theory Group<br />
+                        Department of Physics, Kyoto University
+                    </li>
+                </ol>
+            </footer>
+
+        </div>
+    </body>
+</html>

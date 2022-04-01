@@ -1,0 +1,514 @@
+.header {
+    height: 300px;
+    max-width: 100vw;
+    background-color: black;
+}
+
+.container {
+    height: auto;
+    background-color: dimgrey;
+    max-width: 100vw;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.wrap {
+    margin: 0px;
+}
+
+.main {
+    display: block;
+    width: 80vw;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main h1:first-letter {
+    font-size: 1.2em;
+    color: #0033CC;
+  }
+
+.main h1 {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.main h2 {
+    margin-left: 45px;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ccc;
+    width: fit-content;
+}
+
+.main h3 {
+    text-align: justify;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.main p {
+    text-align: justify;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.main a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+
+.scrollbox {
+    border-bottom: solid black 1.2px;
+    border-top: solid black 1.2px;
+    border-left: solid #0033CC 2px;
+    border-right: solid #0033CC 2px;
+    margin-left: 55px;
+    margin-right: 65px;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.scrollbox ul, li {
+    margin: 0;
+}
+
+.scroll__item {
+    display: flex;
+    border-bottom: solid dimgray 0.5px;
+    margin: 10px;
+    margin-left: -30px;
+}
+
+.scroll__item h3 {
+    margin: 5px;
+    width: 45px;
+}
+
+.scroll__item p {
+    margin: 5px;
+    margin-left: 70px;
+}
+
+.contact {
+    display: flex;
+}
+
+.map {
+    border-bottom: solid black 1.2px;
+    border-top: solid black 1.2px;
+    border-left: solid #0033CC 2px;
+    border-right: solid #0033CC 2px;
+    margin-left: auto;
+    margin-right: 65px;
+    margin-top: auto;
+}
+
+.section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.table ul {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 65px; 
+}
+
+.table li {
+    border-bottom: solid dimgrey 1.2px;
+    border-left: solid black 2.4px;
+}
+
+.table a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+.table h3 {
+    margin-left: 10px;
+}
+
+.table p {
+    margin-left: 20px;
+}
+
+.sidebar {
+    width: 20vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sidebar__item h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.sidebar__item {
+    background-color: dimgrey;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.sidebar__item li {
+    display: block;
+    list-style: None;
+    margin: 5px;
+}
+
+.sidebar__item li a {
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    display: block;    
+}
+
+.sidebar__item p a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar__item a:hover{
+    font-weight: bolder;
+    color: yellow;
+}
+
+.footer {
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    height: 140px;
+    max-width: 100vw;
+}
+
+.footer h3 {
+    padding-top: 20px;
+}
+
+.footer p {
+    margin: 10px
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover{
+  font-weight: bolder;
+  color: yellow;
+}
+  
+  /*==================================================
+  ふわっ
+  ===================================*/
+  
+  
+  /* fadeUp */
+  
+  .fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+   
+  .fadeUpTrigger{
+      opacity: 0;
+  }
+
+  /*==================================================
+スーッ（枠線が伸びて出現）
+===================================*/
+
+/*枠線が伸びて出現*/
+
+.lineTrigger{
+    position: relative; /* 枠線が書かれる基点*/
+    opacity:0;
+  }
+  
+  .lineTrigger.lineanime{
+    animation-name:lineAnimeBase;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+  }
+  
+  @keyframes lineAnimeBase{
+    from {
+      opacity:0;
+    }
+  
+    to {
+      opacity:1;  
+  }
+  }
+  
+  /*上下線*/
+  .lineTrigger::before,
+  .lineTrigger::after{
+    position: absolute;
+    content:"";
+    width:0;
+    height:1.2px;
+    background: black;/* 枠線の色*/
+  }
+  
+  /*左右線*/
+  .line2::before,
+  .line2::after{
+    position: absolute;
+    content:"";
+    width: 3px;
+    height:0;
+    background:#0033CC;/* 枠線の色*/
+  }
+  
+  /*上線*/
+  .lineTrigger::before {
+    top:0;
+    left:0;
+  }
+  
+  .lineTrigger.lineanime::before {
+    animation: lineAnime .5s linear 0s forwards;/*表示されて0秒後に上線が0.5秒かけて表示*/
+  }
+  
+  /*右線*/
+  .line2::before{ 
+    top:0;
+    right:0;
+  }
+  
+  .lineTrigger.lineanime .line2::before {
+    animation: lineAnime2 .5s linear .5s forwards;/*表示されて0.5秒後に右線が0.5秒かけて表示*/
+  }
+  
+  /*下線*/
+  .lineTrigger::after { 
+    bottom:0;
+    right:0;
+  }
+  
+  .lineTrigger.lineanime::after {
+    animation: lineAnime .5s linear 1s forwards;/*表示されて1秒後に下線が0.5秒かけて表示*/
+  }
+  
+  /*左線*/
+  .line2::after{ 
+    bottom:0;
+    left:0;
+  }
+  
+  .lineTrigger.lineanime .line2::after {
+    animation: lineAnime2 .5s linear 1.5s forwards;/*表示されて1.5秒後に左線が0.5秒かけて表示*/
+  }
+  
+  @keyframes lineAnime {
+    0% {width:0%;}
+      100%{width:100%;}
+  }
+  
+  @keyframes lineAnime2 {
+    0% {height:0%;}
+      100%{height:100%;}
+  }
+  
+  /*枠線内側の要素*/
+  
+  .lineTrigger.lineanime .lineinappear{
+    animation: lineInnerAnime .5s linear 1.5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
+    opacity: 0;/*初期値を透過0にする*/ 
+  }
+  
+  @keyframes lineInnerAnime{
+    0% {opacity:0;}
+      100% {opacity:1;}
+  }
+
+/*==================================================
+パタッ
+===================================*/
+
+
+/* 下へ */
+.flipDown{
+    animation-name:flipDownAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes flipDownAnime{
+      from {
+        transform: perspective(2500px) rotateX(100deg);
+      opacity: 0;
+      }
+    
+      to {
+        transform: perspective(2500px) rotateX(0);
+      opacity: 1;
+      }
+    }
+    
+    
+    /* 左へ */
+    .flipLeft{
+    animation-name:flipLeftAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    perspective-origin:left center;
+    opacity:0;
+    }
+    
+    @keyframes flipLeftAnime{
+      from {
+       transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+      opacity: 0;
+      }
+    
+      to {
+      transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+      opacity: 1;
+      }
+    }
+    
+    
+    /* 左上へ */
+    .flipLeftTop{
+    animation-name:flipLeftTopAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes flipLeftTopAnime{
+      from {
+       transform: translate(-20px,80px) rotate(-15deg);
+      opacity: 0;
+      }
+    
+      to {
+       transform: translate(0,0) rotate(0deg);
+      opacity: 1;
+      }
+    }
+    
+    /* 右へ */
+    .flipRight{
+    animation-name:flipRightAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    perspective-origin:right center;
+    opacity:0;
+    }
+    
+    @keyframes flipRightAnime{
+      from {
+       transform: perspective(600px) translate3d(0, 0, 0) rotateY(-30deg);
+      opacity: 0;
+      }
+    
+      to {
+      transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+      opacity: 1;
+      }
+    }
+    
+    /* 右上へ */
+    .flipRightTop{
+    animation-name:flipRightTopAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes flipRightTopAnime{
+      from {
+       transform: translate(-20px,80px) rotate(25deg);
+       opacity: 0;
+      }
+    
+      to {
+       transform: translate(0,1) rotate(0deg);
+      opacity: 1;
+      }
+    }
+    
+    /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+     
+    .flipDownTrigger,
+    .flipLeftTrigger,
+    .flipLeftTopTrigger,
+    .flipRightTrigger,
+    .flipRightTopTrigger{
+        opacity: 0;
+    }
+  
+/* アニメーションスタートの遅延時間を決めるCSS*/
+
+.delay-time05{  
+    animation-delay: 0.5s;
+  }
+
+.delay-time075{  
+    animation-delay: 0.75s;
+  }
+  
+.delay-time1{  
+    animation-delay: 1s;
+  }
+
+.delay-time125{  
+    animation-delay: 1.25s;
+  }
+
+.delay-time15{  
+    animation-delay: 1.5s;
+  }
+
+.delay-time175{  
+    animation-delay: 1.75s;
+  }
+  
+.delay-time2{  
+    animation-delay: 2s;
+  }
+
+.delay-time225{  
+    animation-delay: 2.25s;
+  }
+  
+.delay-time25{  
+    animation-delay: 2.5s;
+  }
+  

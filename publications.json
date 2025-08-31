@@ -1,0 +1,176 @@
+{
+  "publications": [
+    {
+      "id": 1,
+      "title": "Quantum advantage in machine learning with tensor networks",
+      "authors": "T. Yamada, H. Suzuki, K. Tanaka",
+      "journal": "Nature Communications",
+      "volume": "15",
+      "pages": "12345",
+      "year": "2024",
+      "doi": "10.1038/s41467-024-12345-x",
+      "arxiv": "2401.12345",
+      "pdf": "papers/2024_nature_comm.pdf",
+      "type": "journal"
+    },
+    {
+      "id": 2,
+      "title": "Error-resilient quantum algorithms for near-term devices",
+      "authors": "T. Yamada, M. Sato",
+      "journal": "Physical Review Letters",
+      "volume": "132",
+      "pages": "234567",
+      "year": "2024",
+      "doi": "10.1103/PhysRevLett.132.234567",
+      "arxiv": "2402.23456",
+      "pdf": "papers/2024_prl.pdf",
+      "type": "journal"
+    },
+    {
+      "id": 3,
+      "title": "Topological quantum error correction with minimal overhead",
+      "authors": "T. Yamada, Y. Takahashi, N. Ito",
+      "journal": "PRX Quantum",
+      "volume": "5",
+      "pages": "030303",
+      "year": "2024",
+      "doi": "10.1103/PRXQuantum.5.030303",
+      "arxiv": "2403.03030",
+      "pdf": "papers/2024_prx_quantum.pdf",
+      "type": "journal"
+    },
+    {
+      "id": 4,
+      "title": "Variational quantum eigensolver for large-scale molecular systems",
+      "authors": "T. Yamada, S. Watanabe, K. Nakamura",
+      "journal": "Journal of Chemical Physics",
+      "volume": "158",
+      "pages": "123456",
+      "year": "2023",
+      "doi": "10.1063/5.0123456",
+      "arxiv": "2301.12345",
+      "pdf": "papers/2023_jcp.pdf",
+      "type": "journal"
+    },
+    {
+      "id": 5,
+      "title": "Quantum supremacy using a programmable superconducting processor",
+      "authors": "T. Yamada et al.",
+      "journal": "Science",
+      "volume": "374",
+      "pages": "1234",
+      "year": "2023",
+      "doi": "10.1126/science.abc1234",
+      "arxiv": "2302.01234",
+      "pdf": "papers/2023_science.pdf",
+      "type": "journal"
+    },
+    {
+      "id": 6,
+      "title": "Fault-tolerant quantum computation with constant overhead",
+      "authors": "T. Yamada, K. Fujii, M. Koashi",
+      "journal": "Physical Review X",
+      "volume": "13",
+      "pages": "041012",
+      "year": "2023",
+      "doi": "10.1103/PhysRevX.13.041012",
+      "arxiv": "2303.04101",
+      "pdf": "papers/2023_prx.pdf",
+      "type": "journal"
+    },
+    {
+      "id": 7,
+      "title": "Quantum machine learning with sublinear runtime",
+      "authors": "T. Yamada, A. Tanaka",
+      "journal": "Quantum",
+      "volume": "7",
+      "pages": "987",
+      "year": "2023",
+      "doi": "10.22331/q-2023-03-987",
+      "arxiv": "2304.09876",
+      "pdf": "papers/2023_quantum.pdf",
+      "type": "journal"
+    },
+    {
+      "id": 8,
+      "title": "Demonstration of quantum advantage in optimization problems",
+      "authors": "T. Yamada, R. Matsuda, Y. Yoshida",
+      "journal": "Nature Physics",
+      "volume": "19",
+      "pages": "789-795",
+      "year": "2023",
+      "doi": "10.1038/s41567-023-01234-5",
+      "arxiv": "2305.07890",
+      "pdf": "papers/2023_nature_physics.pdf",
+      "type": "journal"
+    },
+    {
+      "id": 9,
+      "title": "Efficient quantum state tomography via compressed sensing",
+      "authors": "T. Yamada, H. Tanaka, S. Ito",
+      "journal": "Physical Review A",
+      "volume": "107",
+      "pages": "042615",
+      "year": "2023",
+      "doi": "10.1103/PhysRevA.107.042615",
+      "arxiv": "2306.04261",
+      "pdf": "papers/2023_pra.pdf",
+      "type": "journal"
+    },
+    {
+      "id": 10,
+      "title": "Quantum algorithms for solving linear systems of equations",
+      "authors": "T. Yamada",
+      "journal": "Physical Review Research",
+      "volume": "4",
+      "pages": "033154",
+      "year": "2022",
+      "doi": "10.1103/PhysRevResearch.4.033154",
+      "arxiv": "2201.03315",
+      "pdf": "papers/2022_prr.pdf",
+      "type": "journal"
+    }
+  ],
+  "preprints": [
+    {
+      "id": 1,
+      "title": "Universal quantum computing with measurement-based quantum computation",
+      "authors": "T. Yamada, K. Mizuta, T. Kuwahara",
+      "arxiv": "2412.12345",
+      "year": "2024",
+      "submitted": "Nature",
+      "type": "preprint"
+    },
+    {
+      "id": 2,
+      "title": "Quantum advantage in combinatorial optimization problems",
+      "authors": "T. Yamada, N. Yoshioka",
+      "arxiv": "2411.23456",
+      "year": "2024",
+      "submitted": "Science",
+      "type": "preprint"
+    }
+  ],
+  "conference": [
+    {
+      "id": 1,
+      "title": "Scalable quantum error correction for surface codes",
+      "authors": "T. Yamada",
+      "conference": "QIP 2024",
+      "location": "Taipei, Taiwan",
+      "year": "2024",
+      "type": "conference",
+      "presentation": "oral"
+    },
+    {
+      "id": 2,
+      "title": "Quantum machine learning for drug discovery",
+      "authors": "T. Yamada, M. Suzuki",
+      "conference": "APS March Meeting 2024",
+      "location": "Minneapolis, USA",
+      "year": "2024",
+      "type": "conference",
+      "presentation": "invited"
+    }
+  ]
+}

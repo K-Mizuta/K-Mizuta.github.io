@@ -2,15 +2,14 @@
   "publications": [
     {
       "id": 1,
-      "title": "Quantum advantage in machine learning with tensor networks",
-      "authors": "T. Yamada, H. Suzuki, K. Tanaka",
-      "journal": "Nature Communications",
-      "volume": "15",
-      "pages": "12345",
-      "year": "2024",
-      "doi": "10.1038/s41467-024-12345-x",
-      "arxiv": "2401.12345",
-      "pdf": "papers/2024_nature_comm.pdf",
+      "title": "Spatial-Translation-Induced Discrete Time Crystals",
+      "authors": "K. Mizuta, K. Takasan, N. Kawakami",
+      "journal": "Phys. Rev. Lett.",
+      "volume": "121",
+      "pages": "093001",
+      "year": "2018",
+      "doi": "https://doi.org/10.1103/PhysRevLett.121.093001",
+      "arxiv": "1804.01291",
       "type": "journal"
     },
     {

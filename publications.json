@@ -8,10 +8,11 @@
       "volume": "",
       "pages": "",
       "year": "2025",
-      "doi": "",
-      "arxiv": "",
+      "doi": "https://doi.org/10.48550/arXiv.2504.20746",
+      "arxiv": "2504.20746",
       "type": "preprint"
     },
+
     {
       "id": 17,
       "title": "Controlling discrete time crystals via single-site operations in zero-field diamond quantum simulators",
@@ -21,9 +22,10 @@
       "pages": "144311",
       "year": "2025",
       "doi": "https://doi.org/10.1103/PhysRevB.111.144311",
-      "arxiv": "",
+      "arxiv": "2412.07400",
       "type": "journal"
     },
+
     {
       "id": 16,
       "title": "Comment on \"Multivariable quantum signal processing (M-QSP): prophecies of the two-headed oracle\"",
@@ -32,10 +34,11 @@
       "volume": "8",
       "pages": "1512",
       "year": "2024",
-      "doi": "",
-      "arxiv": "",
+      "doi": "https://doi.org/10.22331/q-2024-10-29-1512",
+      "arxiv": "2310.00918",
       "type": "journal"
     },
+
     {
       "id": 15,
       "title": "Explicit error bounds with commutator scaling for time-dependent product and multi-product formulas",
@@ -44,10 +47,11 @@
       "volume": "",
       "pages": "",
       "year": "2024",
-      "doi": "",
-      "arxiv": "",
+      "doi": "https://doi.org/10.48550/arXiv.2410.14243",
+      "arxiv": "2410.14243",
       "type": "preprint"
     },
+
     {
       "id": 14,
       "title": "Nearly optimal quasienergy estimation and eigenstate preparation of time-periodic Hamiltonians by Sambe space formalism",
@@ -57,9 +61,10 @@
       "pages": "013068",
       "year": "2025",
       "doi": "https://doi.org/10.1103/PhysRevResearch.7.013068",
-      "arxiv": "",
+      "arxiv": "2401.02700",
       "type": "journal"
     },
+
     {
       "id": 13,
       "title": "Current numbers of qubits and their uses",
@@ -69,9 +74,10 @@
       "pages": "345",
       "year": "2024",
       "doi": "https://doi.org/10.1038/s42254-024-00725-0",
-      "arxiv": "",
+      "arxiv": "2307.16130",
       "type": "journal"
     },
+
     {
       "id": 12,
       "title": "Recursive quantum eigenvalue and singular-value transformation: Analytic construction of matrix sign function by Newton iteration",
@@ -84,6 +90,7 @@
       "arxiv": "2304.13330",
       "type": "journal"
     },
+
     {
       "id": 11,
       "title": "Optimal and nearly optimal simulation of multiperiodic time-dependent Hamiltonians",
@@ -92,10 +99,11 @@
       "volume": "5",
       "pages": "033067",
       "year": "2023",
-      "doi": "",
-      "arxiv": "",
+      "doi": "10.1103/PhysRevResearch.5.033067",
+      "arxiv": "2301.06232",
       "type": "journal"
     },
+
     {
       "id": 10,
       "title": "Optimal Hamiltonian simulation for time-periodic systems",
@@ -104,8 +112,8 @@
       "volume": "7",
       "pages": "962",
       "year": "2023",
-      "doi": "",
-      "arxiv": "",
+      "doi": "https://doi.org/10.22331/q-2023-03-28-962",
+      "arxiv": "2209.05048",
       "type": "journal"
     },
     {
@@ -128,8 +136,8 @@
       "volume": "3",
       "pages": "010346",
       "year": "2022",
-      "doi": "",
-      "arxiv": "",
+      "doi": "10.1103/PRXQuantum.3.010346",
+      "arxiv": "2007.10917",
       "type": "journal"
     },
     {
@@ -140,8 +148,8 @@
       "volume": "3",
       "pages": "043121",
       "year": "2021",
-      "doi": "",
-      "arxiv": "",
+      "doi": "10.1103/PhysRevResearch.3.043121",
+      "arxiv": "2104.00855",
       "type": "journal"
     },
     {
@@ -164,8 +172,8 @@
       "volume": "103",
       "pages": "L020202",
       "year": "2021",
-      "doi": "",
-      "arxiv": "",
+      "doi": "10.1103/PhysRevA.103.L020202 ",
+      "arxiv": "2008.13104",
       "type": "journal"
     },
 
@@ -177,8 +185,8 @@
       "volume": "2",
       "pages": "033284",
       "year": "2020",
-      "doi": "",
-      "arxiv": "",
+      "doi": "10.1103/PhysRevResearch.2.033284",
+      "arxiv": "2004.04431",
       "type": "journal"
     },
 
@@ -190,8 +198,8 @@
       "volume": "100",
       "pages": "052109",
       "year": "2019",
-      "doi": "",
-      "arxiv": "",
+      "doi": "https://doi.org/10.1103/PhysRevA.100.052109",
+      "arxiv": "1908.04100",
       "type": "journal"
     },
 
@@ -203,8 +211,8 @@
       "volume": "100",
       "pages": "020301(R)",
       "year": "2019",
-      "doi": "",
-      "arxiv": "",
+      "doi": "10.1103/PhysRevB.100.020301",
+      "arxiv": "1902.01126",
       "type": "journal"
     },
 

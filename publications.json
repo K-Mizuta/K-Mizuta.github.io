@@ -1,7 +1,7 @@
 {
-  "publications": [
+  "preprints": [
     {
-      "id": 18,
+      "id": 2,
       "title": "Trotterization is substantially efficient for low-energy states",
       "authors": "Kaoru Mizuta, Tomotaka Kuwahara",
       "journal": "arXiv",
@@ -14,7 +14,24 @@
     },
 
     {
-      "id": 17,
+      "id": 1,
+      "title": "Explicit error bounds with commutator scaling for time-dependent product and multi-product formulas",
+      "authors": "Kaoru Mizuta, Tatsuhiko N. Ikeda, Keisuke Fujii",
+      "journal": "arXiv",
+      "volume": "",
+      "pages": "",
+      "year": "2024",
+      "doi": "https://doi.org/10.48550/arXiv.2410.14243",
+      "arxiv": "2410.14243",
+      "type": "preprint"
+    }
+  ],
+
+  "publications": [
+    
+
+    {
+      "id": 16,
       "title": "Controlling discrete time crystals via single-site operations in zero-field diamond quantum simulators",
       "authors": "Naoya Egawa, Kaoru Mizuta, Joji Nasu",
       "journal": "Phys. Rev. B",
@@ -27,7 +44,7 @@
     },
 
     {
-      "id": 16,
+      "id": 15,
       "title": "Comment on \"Multivariable quantum signal processing (M-QSP): prophecies of the two-headed oracle\"",
       "authors": "Hitomi Mori, Keisuke Fujii, Kaoru Mizuta",
       "journal": "Quantum",
@@ -37,19 +54,6 @@
       "doi": "https://doi.org/10.22331/q-2024-10-29-1512",
       "arxiv": "2310.00918",
       "type": "journal"
-    },
-
-    {
-      "id": 15,
-      "title": "Explicit error bounds with commutator scaling for time-dependent product and multi-product formulas",
-      "authors": "Kaoru Mizuta, Tatsuhiko N. Ikeda, Keisuke Fujii",
-      "journal": "arXiv",
-      "volume": "",
-      "pages": "",
-      "year": "2024",
-      "doi": "https://doi.org/10.48550/arXiv.2410.14243",
-      "arxiv": "2410.14243",
-      "type": "preprint"
     },
 
     {

@@ -1,0 +1,60 @@
+{
+  "news": [
+    {
+      "date": "2024-12-15",
+      "category": "publication",
+      "title": "量子機械学習に関する論文「Quantum advantage in machine learning with tensor networks」がNature Communicationsに掲載されました。",
+      "link": "#publications",
+      "linkText": "[詳細]"
+    },
+    {
+      "date": "2024-11-20",
+      "category": "presentation",
+      "title": "国際会議 QIP 2025（2025年2月、台北）にて招待講演「Quantum Error Correction for NISQ Devices」を行います。",
+      "link": null,
+      "linkText": null
+    },
+    {
+      "date": "2024-10-01",
+      "category": "grant",
+      "title": "JST さきがけ「量子情報処理」領域（研究期間：2024-2027年度）に採択されました。研究課題「フォールトトレラント量子計算に向けた新規エラー訂正符号の開発」",
+      "link": null,
+      "linkText": null
+    },
+    {
+      "date": "2024-09-15",
+      "category": "award",
+      "title": "第18回日本物理学会若手奨励賞（領域1）を受賞しました。受賞題目「量子多体系における非平衡ダイナミクスの理論的研究」",
+      "link": null,
+      "linkText": null
+    },
+    {
+      "date": "2024-08-30",
+      "category": "news",
+      "title": "新しい研究プロジェクト「量子エラー訂正の実装と最適化」（共同研究：IBM Research）がスタートしました。",
+      "link": null,
+      "linkText": null
+    },
+    {
+      "date": "2024-07-22",
+      "category": "media",
+      "title": "日経サイエンス2024年9月号に研究内容「量子コンピュータによる創薬への応用」が特集記事として掲載されました。",
+      "link": null,
+      "linkText": null
+    },
+    {
+      "date": "2024-06-10",
+      "category": "publication",
+      "title": "共著論文「Topological quantum phases in synthetic dimensions」がPhysical Review Letters に掲載されました。",
+      "link": "#publications",
+      "linkText": "[詳細]"
+    },
+    {
+      "date": "2024-05-15",
+      "category": "presentation",
+      "title": "量子情報処理学会第46回研究会（QIT46）にて口頭発表「変分量子アルゴリズムの収束性改善」を行いました。",
+      "link": null,
+      "linkText": null
+    }
+  ]
+}

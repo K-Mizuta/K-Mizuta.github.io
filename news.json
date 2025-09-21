@@ -1,17 +1,31 @@
 {
   "news": [
     {
-      "date": "2024-12-15",
+      "date": "2025-08-21",
       "category": "publication",
-      "title": "量子機械学習に関する論文「Quantum advantage in machine learning with tensor networks」がNature Communicationsに掲載されました。",
+      "title": "主著論文[18]が Phys. Rev. Lett. に受理されました。",
       "link": "#publications",
       "linkText": "[詳細]"
     },
     {
-      "date": "2024-11-20",
+      "date": "2025-08-04",
       "category": "presentation",
-      "title": "国際会議 QIP 2025（2025年2月、台北）にて招待講演「Quantum Error Correction for NISQ Devices」を行います。",
-      "link": null,
+      "title": "国際会議 QSim 2025 で口頭講演を行いました。",
+      "link": "#presentations",
+      "linkText": null
+    },
+    {
+      "date": "2025-07-25",
+      "category": "presentation",
+      "title": "国際会議 QI Satellite で口頭講演を行いました。",
+      "link": "#presentations",
+      "linkText": null
+    },
+    {
+      "date": "2025-07-24",
+      "category": "presentation",
+      "title": "国際会議 QIP 2025 での講演が<a href= 'https://youtu.be/rzTfEPwfPa4?si=vDhB_TxvnqgGxuIN'>YouTube</a>で公開されました",
+      "link": "#presentations",
       "linkText": null
     },
     {

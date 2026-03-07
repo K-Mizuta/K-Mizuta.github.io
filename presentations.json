@@ -1,30 +1,222 @@
 {
-  "oralinternational": [
+  "refereed": [
     {
-      "number": 1,
-      "title": "a",
+      "number": 19,
+      "title": "On the commutator scaling in Hamiltonian simulation with multi-product formulas",
       "authors": ["<strong>Kaoru Mizuta</strong>"],
-      "conference": "YITP",
-      "place": "Kyoto, Japan",
-      "date": "2022-2",
+      "journal": null,
       "links": [
         { "label": "arXiv:2507.06557 (2025)", "url": "https://arxiv.org/abs/2507.06557" }
       ],
-      "note": "aa"
-    }
-  ],
-
-  "oraldomestic": [
+      "note": null
+    },
+    {
+      "number": 18,
+      "title": "Trotterization is substantially efficient for low-energy states",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Tomotaka Kuwahara"],
+      "journal": null,
+      "links": [
+        { "label": "arXiv:2504.20746 (2025)", "url": "https://arxiv.org/abs/2504.20746" }
+      ],
+      "note": "Accepted in Phys. Rev. Lett."
+    },
+    {
+      "number": 17,
+      "title": "Controlling discrete time crystals via single-site operations in zero-field diamond quantum simulators",
+      "authors": ["Naoya Egawa", "<strong>Kaoru Mizuta</strong>", "Joji Nasu"],
+      "journal": "Phys. Rev. B 111, 144311 (2025)",
+      "links": [
+        { "label": "Phys. Rev. B 111, 144311 (2025)", "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.144311" },
+        { "label": "arXiv:2412.07400", "url": "https://arxiv.org/abs/2412.07400" }
+      ],
+      "note": null
+    },
+    {
+      "number": 16,
+      "title": "Comment on \"Multivariable quantum signal processing (M-QSP): prophecies of the two-headed oracle\"",
+      "authors": ["Hitomi Mori", "Keisuke Fujii", "<strong>Kaoru Mizuta</strong>"],
+      "journal": "Quantum 8, 1512 (2024)",
+      "links": [
+        { "label": "Quantum 8, 1512 (2024)", "url": "https://quantum-journal.org/papers/q-2024-10-29-1512/" },
+        { "label": "arXiv:2310.00918", "url": "https://arxiv.org/abs/2310.00918" }
+      ],
+      "note": null
+    },
+    {
+      "number": 15,
+      "title": "Explicit error bounds with commutator scaling for time-dependent product and multi-product formulas",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Tatsuhiko N. Ikeda", "Keisuke Fujii"],
+      "journal": null,
+      "links": [
+        { "label": "arXiv:2410.14243 (2024)", "url": "https://arxiv.org/abs/2410.14243" }
+      ],
+      "note": null
+    },
+    {
+      "number": 14,
+      "title": "Nearly optimal quasienergy estimation and eigenstate preparation of time-periodic Hamiltonians by Sambe space formalism",
+      "authors": ["<strong>Kaoru Mizuta</strong>"],
+      "journal": "Phys. Rev. Research 7, 013068 (2025)",
+      "links": [
+        { "label": "Phys. Rev. Research 7, 013068 (2025)", "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.7.013068" },
+        { "label": "arXiv:2401.02700", "url": "https://arxiv.org/abs/2401.02700" }
+      ],
+      "note": null
+    },
+    {
+      "number": 13,
+      "title": "Current numbers of qubits and their uses",
+      "authors": ["Tsubasa Ichikawa", "Hideaki Hakoshima", "Koji Inui", "Kosuke Ito", "Ryo Matsuda", "Kosuke Mitarai", "Koichi Miyamoto", "Wataru Mizukami", "<strong>Kaoru Mizuta</strong>", "Toshio Mori", "Yuichiro Nakano", "Akimoto Nakayama", "Ken N. Okada", "Takanori Sugimoto", "Souichi Takahira", "Nayuta Takemori", "Satoyuki Tsukano", "Hiroshi Ueda", "Ryo Watanabe", "Yuichiro Yoshida", "Keisuke Fujii"],
+      "journal": "Nature Reviews Physics 6, 345 (2024)",
+      "links": [
+        { "label": "Nature Reviews Physics 6, 345 (2024)", "url": "https://www.nature.com/articles/s42254-024-00725-0" },
+        { "label": "arXiv:2307.16130", "url": "https://arxiv.org/abs/2307.16130" }
+      ],
+      "note": null
+    },
+    {
+      "number": 12,
+      "title": "Recursive quantum eigenvalue and singular-value transformation: Analytic construction of matrix sign function by Newton iteration",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Keisuke Fujii"],
+      "journal": "Phys. Rev. Research 6, L012007 (2024)",
+      "links": [
+        { "label": "Phys. Rev. Research 6, L012007 (2024)", "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.6.L012007" },
+        { "label": "arXiv:2304.13330", "url": "https://arxiv.org/abs/2304.13330" }
+      ],
+      "note": null
+    },
+    {
+      "number": 11,
+      "title": "Optimal and nearly optimal simulation of multiperiodic time-dependent Hamiltonians",
+      "authors": ["<strong>Kaoru Mizuta</strong>"],
+      "journal": "Phys. Rev. Research 5, 033067 (2023)",
+      "links": [
+        { "label": "Phys. Rev. Research 5, 033067 (2023)", "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.033067" },
+        { "label": "arXiv:2301.06232", "url": "https://arxiv.org/abs/2301.06232" }
+      ],
+      "note": null
+    },
+    {
+      "number": 10,
+      "title": "Optimal Hamiltonian simulation for time-periodic systems",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Keisuke Fujii"],
+      "journal": "Quantum 7, 962 (2023)",
+      "links": [
+        { "label": "Quantum 7, 962 (2023)", "url": "https://quantum-journal.org/papers/q-2023-03-28-962/" },
+        { "label": "arXiv:2209.05048", "url": "https://arxiv.org/abs/2209.05048" }
+      ],
+      "note": null
+    },
+    {
+      "number": 9,
+      "title": "Local variational quantum compilation of a large-scale Hamiltonian dynamics",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Yuya O. Nakagawa", "Kosuke Mitarai", "Keisuke Fujii"],
+      "journal": "PRX Quantum 3, 040302 (2022)",
+      "links": [
+        { "label": "PRX Quantum 3, 040302 (2022)", "url": "https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.040302" },
+        { "label": "arXiv:2203.15484", "url": "https://arxiv.org/abs/2203.15484" }
+      ],
+      "note": null
+    },
+    {
+      "number": 8,
+      "title": "Deep Variational Quantum Eigensolver: a divide-and-conquer method for solving a larger problem with smaller size quantum computers",
+      "authors": ["Keisuke Fujii", "<strong>Kaoru Mizuta</strong>", "Hiroshi Ueda", "Kosuke Mitarai", "Wataru Mizukami", "Yuya O. Nakagawa"],
+      "journal": "PRX Quantum 3, 010346 (2022)",
+      "links": [
+        { "label": "PRX Quantum 3, 010346 (2022)", "url": "https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.010346" },
+        { "label": "arXiv:2007.10917", "url": "https://arxiv.org/abs/2007.10917" }
+      ],
+      "note": null
+    },
+    {
+      "number": 7,
+      "title": "Deep variational quantum eigensolver for excited states and its application to quantum chemistry calculation of periodic materials",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Mikiya Fujii", "Shigeki Fujii", "Kazuhide Ichikawa", "Yutaka Imamura", "Yukihiro Okuno", "Yuya O. Nakagawa"],
+      "journal": "Phys. Rev. Research 3, 043121 (2021)",
+      "links": [
+        { "label": "Phys. Rev. Research 3, 043121 (2021)", "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.043121" },
+        { "label": "arXiv:2104.00855", "url": "https://arxiv.org/abs/2104.00855" }
+      ],
+      "note": null
+    },
+    {
+      "number": 6,
+      "title": "Fate of topological edge states in disordered periodically driven nonlinear systems",
+      "authors": ["Ken Mochizuki", "<strong>Kaoru Mizuta</strong>", "Norio Kawakami"],
+      "journal": "Phys. Rev. Research 3, 043112 (2021)",
+      "links": [
+        { "label": "Phys. Rev. Research 3, 043112 (2021)", "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.043112" },
+        { "label": "arXiv:2108.00649", "url": "https://arxiv.org/abs/2108.00649" }
+      ],
+      "note": "<em>Editor's Suggestion</em>"
+    },
+    {
+      "number": 5,
+      "title": "Breakdown of Markovianity by interactions in stroboscopic Floquet-Lindblad dynamics under high-frequency drive",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Kazuaki Takasan", "Norio Kawakami"],
+      "journal": "Phys. Rev. A 103, L020202 (2021)",
+      "links": [
+        { "label": "Phys. Rev. A 103, L020202 (2021)", "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.103.L020202" },
+        { "label": "arXiv:2008.13104", "url": "https://arxiv.org/abs/2008.13104" }
+      ],
+      "note": null
+    },
+    {
+      "number": 4,
+      "title": "Exact Floquet quantum many-body scars under Rydberg blockade",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Kazuaki Takasan", "Norio Kawakami"],
+      "journal": "Phys. Rev. Research 2, 033284 (2020)",
+      "links": [
+        { "label": "Phys. Rev. Research 2, 033284 (2020)", "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033284" },
+        { "label": "arXiv:2004.04431", "url": "https://arxiv.org/abs/2004.04431" }
+      ],
+      "note": null
+    },
+    {
+      "number": 3,
+      "title": "Floquet engineering of topological phases protected by emergent symmetries under resonant drives",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Kazuaki Takasan", "Norio Kawakami"],
+      "journal": "Phys. Rev. A 100, 052109 (2019)",
+      "links": [
+        { "label": "Phys. Rev. A 100, 052109 (2019)", "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.100.052109" },
+        { "label": "arXiv:1908.04100", "url": "https://arxiv.org/abs/1908.04100" }
+      ],
+      "note": null
+    },
+    {
+      "number": 2,
+      "title": "High-frequency expansions for Floquet prethermal phases with emergent symmetries: Application to time crystals and Floquet engineering",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Kazuaki Takasan", "Norio Kawakami"],
+      "journal": "Phys. Rev. B 100, 020301(R) (2019)",
+      "links": [
+        { "label": "Phys. Rev. B 100, 020301(R) (2019)", "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.020301" },
+        { "label": "arXiv:1902.01126", "url": "https://arxiv.org/abs/1902.01126" }
+      ],
+      "note": null
+    },
     {
       "number": 1,
-      "title": "a",
-      "authors": "<strong>Kaoru Mizuta</strong>",
-      "conference": "YITP",
-      "place": "Kyoto, Japan",
-      "date": "2022-2",
-      "links": null,
-      "note": "aa"
+      "title": "Spatial-Translation-Induced Discrete Time Crystals",
+      "authors": ["<strong>Kaoru Mizuta</strong>", "Kazuaki Takasan", "Masaya Nakagawa", "Norio Kawakami"],
+      "journal": "Phys. Rev. Lett. 121, 093001 (2018)",
+      "links": [
+        { "label": "Phys. Rev. Lett. 121, 093001 (2018)", "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.093001" },
+        { "label": "arXiv:1804.01291", "url": "https://arxiv.org/abs/1804.01291" }
+      ],
+      "note": null
+    }
+  ],
+  "others": [
+    {
+      "number": 1,
+      "title": "Nonequilibrium quantum many-body phenomena in Floquet systems",
+      "authors": ["<strong>Kaoru Mizuta</strong>"],
+      "journal": "PhD Thesis, Kyoto University",
+      "links": [
+        { "label": "Link", "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/275016" }
+      ],
+      "note": null
     }
   ]
-
 }

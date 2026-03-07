@@ -1,5 +1,5 @@
 {
-  "oral-international": [
+  "oral_international": [
     {
       "number": 1,
       "title": "a",
@@ -12,7 +12,7 @@
     }
   ],
 
-  "oral-domestic": [
+  "oral_domestic": [
     {
       "number": 1,
       "title": "a",

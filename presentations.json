@@ -3,7 +3,7 @@
     {
       "number": 1,
       "title": "a",
-      "authors": "<strong>Kaoru Mizuta</strong>",
+      "authors": ["<strong>Kaoru Mizuta</strong>"],
       "conference": "YITP",
       "place": "Kyoto, Japan",
       "date": "2022-2",

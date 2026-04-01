@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Presentations | Kaoru Mizuta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <div class="hero-banner">
+        <img src="header4.jpg" alt="Quantum circuit illustration">
+    </div>
+
+    <header>
+        <div class="container nav-flex">
+            <a href="index.html" class="site-title"><span class="accent">K</span>AORU MIZUTA</a>
+            <nav>
+                <a href="index.html">ホーム</a>
+                <a href="research.html">研究</a>
+                <a href="publications.html">論文</a>
+                <a href="presentations.html">発表</a>
+                <a href="lecture.html">授業</a>
+                <a href="cv.html">CV</a>
+                <a href="others.html">その他</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="first-section">
+            <h2>講演・発表 / Presentations</h2>
+        </section>
+
+        <section>
+            <h3>口頭講演 / Oral presentations</h3>
+
+            <h4>国際会議 / International conferences</h4>
+            <ul class="pub-list" id="oral-international-list"></ul>
+
+            <h4>国内学会 / Domestic conferences</h4>
+            <ul class="pub-list" id="oral-domestic-list"></ul>
+            
+            
+            
+
+        </section>
+
+        <section>
+            <h3>ポスター発表 / Poster presentations</h3>
+
+            <h4>国際会議 / International conferences</h4>
+            <ul class="pub-list" id="poster-international-list"></ul>
+
+            <h4>国内学会 / Domestic conferences</h4>
+            <ul class="pub-list" id="poster-domestic-list"></ul>
+
+        </section>
+
+        <section>
+            <h3>セミナー / Seminars</h3>
+            <ul class="pub-list" id="seminars-list"></ul>
+            
+        </section>
+    </main>
+
+    <footer>&copy; 2026 Kaoru Mizuta</footer>
+
+    <script src="canvas-animation.js"></script>
+    <script>
+        function renderPubItem(pub) {
+
+            const linkHtml = pub.url ? `\n- [<a href="${pub.url}">Link</a>]` : '';
+
+            const noteHtml = pub.note ? `\n— ${pub.note}` : '';
+
+            return `
+                <li class="pub-item">
+                    <span class="pub-number">[${pub.number}] ${noteHtml}</span>
+                    <span class="pub-title">${pub.title}</span>
+                    <span class="pub-meta">
+                        Conference: <strong>${pub.conference}</strong> ${linkHtml}<br>
+                        Place: ${pub.place}, Date: ${pub.date}
+                    </span>
+                </li>
+            `;
+        }
+
+        function renderPubList(pubs, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = pubs.map(renderPubItem).join('');
+        }
+
+        fetch('https://k-mizuta.github.io/presentations.json')
+            .then(res => res.json())
+            .then(data => {
+                renderPubList(data.oralint, 'oral-international-list');
+                renderPubList(data.oraldom, 'oral-domestic-list');
+                renderPubList(data.posterint, 'poster-international-list');
+                renderPubList(data.posterdom, 'poster-domestic-list');
+                renderPubList(data.seminars, 'seminars-list');
+            })
+            .catch(err => {
+                console.error('Failed to load presentations:', err);
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publications | Kaoru Mizuta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <div class="hero-banner">
+        <img src="header4.jpg" alt="Quantum circuit illustration">
+    </div>
+
+    <header>
+        <div class="container nav-flex">
+            <a href="index.html" class="site-title"><span class="accent">K</span>AORU MIZUTA</a>
+            <nav>
+                <a href="index.html">ホーム</a>
+                <a href="research.html">研究</a>
+                <a href="publications.html">論文</a>
+                <a href="presentations.html">発表</a>
+                <a href="lecture.html">授業</a>
+                <a href="cv.html">CV</a>
+                <a href="others.html">その他</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="first-section">
+            <h2>論文 / Publications</h2>
+        </section>
+
+        <section>
+            <h3>査読付き論文 / Refereed Papers</h3>
+            <ul class="pub-list" id="refereed-list"></ul>
+        </section>
+
+        <section>
+            <h3>その他 / Others</h3>
+            <ul class="pub-list" id="others-list"></ul>
+        </section>
+    </main>
+
+    <footer>&copy; 2026 Kaoru Mizuta</footer>
+
+    <script src="canvas-animation.js"></script>
+    <script>
+        function renderPubItem(pub) {
+            const authorsStr = pub.authors.join(', ');
+
+            const linksHtml = pub.links.map((link, i) => {
+                if (i === 0) {
+                    return `<a href="${link.url}">${link.label}</a>`;
+                }
+                return `[<a href="${link.url}">${link.label}</a>]`;
+            }).join('\n');
+
+            const noteHtml = pub.note ? `\n— ${pub.note}` : '';
+
+            return `
+                <li class="pub-item">
+                    <span class="pub-number">[${pub.number}]</span>
+                    <span class="pub-title">${pub.title}</span>
+                    <span class="pub-meta">
+                        ${authorsStr}<br>
+                        ${linksHtml}${noteHtml}
+                    </span>
+                </li>
+            `;
+        }
+
+        function renderPubList(pubs, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = pubs.map(renderPubItem).join('');
+        }
+
+        fetch('https://k-mizuta.github.io/publications.json')
+            .then(res => res.json())
+            .then(data => {
+                renderPubList(data.refereed, 'refereed-list');
+                renderPubList(data.others, 'others-list');
+            })
+            .catch(err => {
+                console.error('Failed to load publications:', err);
+            });
+    </script>
+</body>
+</html>

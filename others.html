@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Others | Kaoru Mizuta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <div class="hero-banner">
+        <img src="header4.jpg" alt="Quantum circuit illustration">
+    </div>
+
+    <header>
+        <div class="container nav-flex">
+            <a href="index.html" class="site-title"><span class="accent">K</span>AORU MIZUTA</a>
+            <nav>
+                <a href="index.html">ホーム</a>
+                <a href="research.html">研究</a>
+                <a href="publications.html">論文</a>
+                <a href="presentations.html">発表</a>
+                <a href="lecture.html">授業</a>
+                <a href="cv.html">CV</a>
+                <a href="others.html">その他</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-body">
+        <section>
+            <h2>ノート / Notes</h2>
+            <h3><a href="Note/Trotter分解20260401.pdf">Trotter分解</a></h3>
+
+            Trotter 分解、あるいは積公式(product formula)は、量子多体系の時間発展を計算するための最も基本的な手法です。 
+            テンソルネットワークなどに利用される他、量子アルゴリズムではその実装の容易さから現在の量子コンピュータ実機でも多く使われています。 
+            特に近年一般の積公式の誤差の交換子スケーリングが明らかになり[1]、将来の大規模な量子計算機においても有用であると期待されるようになりました。 
+            本ノートでは主に量子計算における Trotter 分解についてまとめ、 Ref. [1] などの近年の進展を議論しています。<br>
+
+            2025.3.9: 複数積公式に関する章を追記しました。<br>
+            2026.4.1: 複数積公式の証明に関する注意点を追記しました。<br>
+
+            [1] A. M. Childs, Y. Su, M. C. Tran, N. Wiebe, and S. Zhu, Phys. Rev. X 11, 011020 (2021).
+
+            <h3><a href="Note/量子特異値変換.pdf">量子特異値変換</a></h3>
+
+            量子特異値変換(Quantum Singular Value Transformation, QSVT)は、行列の各特異値を多項式変換する演算子を作用する量子アルゴリズムです[1]。 
+            量子特異値変換は Grover 探索や量子多体系のハミルトニアンシミュレーションなど現在の重要な量子アルゴリズムの多くを統一的に記述することから "量子アルゴリズムの大統一理論" と呼ばれています[2]。 
+            加えて、多くの量子アルゴリズムに対し最適なクエリ複雑性(計算時間に比例)を与えることも知られており、将来的な量子計算機における最も標準的なアルゴリズムとなることが期待されています。 
+            本ノートでは Refs. [1,2] の内容を中心に量子特異値変換について日本語でまとめています。<br>
+
+            [1] A. Gilyén, Y. Su, G. H. Low, and N. Wiebe, STOC 2019, pp. 193–204 (2019).<br>
+
+            [2] J. M. Martyn, Z. M. Rossi, A. K. Tan, and I. L. Chuang, PRX Quantum 2, 040203 (2021).<br>
+
+            <h2>スライド / Slides</h2>
+
+            これまでの発表のスライドをピックアップして掲載する予定です。
+            
+        </section>
+    </main>
+
+    <footer>&copy; 2026 Kaoru Mizuta</footer>
+
+    <script src="canvas-animation.js"></script>
+</body>
+</html>

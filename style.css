@@ -1,520 +1,429 @@
-.header {
-    height: 300px;
-    max-width: 100vw;
-    background-color: black;
+/* Modern Academic Style — QIQB-Inspired Light Blue */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+    --navy: #0f2b5b;
+    --navy-mid: #1a3a6e;
+    --indigo: #3b7de8;
+    --blue-bright: #4a8af4;
+    --blue-light: #93c5fd;
+    --cyan: #38bdf8;
+    --text: #e2e8f0;
+    --text-light: #94a3b8;
+    --text-muted: #64748b;
+    --glass-bg: transparent;
+    --glass-border: rgba(56, 189, 248, 0.15);
 }
+
+body {
+    font-family: "Source Serif 4", Georgia, "Hiragino Mincho ProN", serif;
+    line-height: 1.85;
+    color: var(--text);
+    margin: 0;
+    background-color: #0a0a0a;
+    overflow-x: hidden;
+}
+
+[id] {
+  scroll-margin-top: 80px; /* ヘッダーの高さに合わせて調整 */
+}
+
+/* ========== ヒーローバナー ========== */
+.hero-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1001;
+    background: #000000;
+}
+
+.hero-banner img {
+    width: 100%;
+    display: block;
+}
+
+/* ========== ヘッダー：ライトグラスモーフィズム ========== */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #000000;
+    border-bottom: none;
+    padding: 18px 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ヘッダー上部のグラデーションライン */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--indigo), var(--cyan), var(--indigo), transparent);
+    background-size: 300% 100%;
+    animation: gradientSlide 8s ease infinite;
+}
+
+/* ヘッダー下部のグラデーションライン */
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--indigo), var(--cyan), var(--indigo), transparent);
+    background-size: 300% 100%;
+    animation: gradientSlide 8s ease infinite;
+}
+
+header.scrolled::after {
+    height: 2px;
+}
+
+@keyframes gradientSlide {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* スクロール時のヘッダー変化 */
+header.scrolled {
+    background: #000000;
+    padding: 12px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+
 
 .container {
-    height: auto;
-    background-color: dimgrey;
-    max-width: 100vw;
-    display: -webkit-flex;
-    display: flex;
-    margin-top: 5px;
-    margin-bottom: 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
-.wrap {
+.main-body a {
+    color: var(--indigo);
+}
+
+.main-body a:hover {
+    color: var(--cyan);
+    text-decoration: underline;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.site-title:hover {
+    color: var(--cyan);
+}
+
+.site-title .accent {
+    color: var(--indigo);
+    font-size: 1.2em;
+}
+
+.name-home {
+    font-size: 1.8rem;
+}
+
+.accent {
+    color: var(--indigo);
+    font-size: 1.2em;
+}
+
+nav a {
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    margin-left: 32px;
+    font-size: 0.88rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--indigo), var(--cyan));
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ========== メインセクション ========== */
+main {
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+    margin-top: -4px;
+}
+
+main.container {
+    background: transparent;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 20px 20px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: none;
+}
+
+h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #ffffff;
+    border-bottom: none;
+    padding-bottom: 8px;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin-top: 0px;
+    background: linear-gradient(90deg, var(--indigo), var(--cyan));
+    border-radius: 3px;
+}
+
+.first-section h2 {
+    margin-top: 0px;
+}
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.25rem;
+    color: var(--indigo);
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+p {
+    color: var(--text);
     margin: 0px;
 }
 
-.main {
-    display: block;
-    width: 80vw;
-    background-color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+strong {
+    color: #e2e8f0;
 }
 
-.main h1:first-letter {
-    font-size: 1.2em;
-    color: #0033CC;
-  }
-
-.main h1 {
-    margin-left: 30px;
-    margin-bottom: 30px;
+/* リスト・論文スタイル */
+.pub-list {
+    list-style: none;
+    padding: 0;
 }
 
-.main h2 {
-    margin-left: 45px;
-    
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #ccc;
-    width: fit-content;
+.pub-item {
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border-left: 3px solid var(--indigo);
+    background: rgba(60, 130, 246, 0.04);
+    border-radius: 0 8px 8px 0;
+    transition: background 0.3s, transform 0.2s;
 }
 
-.main h3 {
-    text-align: justify;
-    margin-left: 55px;
-    margin-right: 55px;
+.pub-item:hover {
+    background: rgba(60, 130, 246, 0.08);
+    transform: translateX(4px);
 }
 
-.main p {
-    text-align: justify;
-    margin-left: 65px;
-    margin-right: 65px;
-}
-
-.main ul {
-  text-align: justify;
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-.main a {
+.pub-title { font-weight: bold; display: block; color: #e2e8f0; }
+.pub-meta { font-size: 0.95rem; color: var(--text-light); }
+.pub-meta a {
+    color: var(--indigo);
     text-decoration: none;
-    color: dodgerblue;
+    transition: color 0.2s;
 }
-
-.main a:hover {
+.pub-meta a:hover {
+    color: var(--cyan);
     text-decoration: underline;
 }
-
-.scrollbox {
-    border-bottom: solid black 1.2px;
-    border-top: solid black 1.2px;
-    border-left: solid #0033CC 2px;
-    border-right: solid #0033CC 2px;
-    margin-left: 55px;
-    margin-right: 65px;
-    height: 150px;
-    overflow-y: scroll;
+.pub-number {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: var(--indigo);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 4px;
 }
 
-.scrollbox ul, li {
+/* ========== News ボックス（スクロール付き） ========== */
+.news-box {
+    max-height: 360px;
+    overflow-y: auto;
+    border: 1px solid rgba(60, 130, 246, 0.12);
+    border-radius: 12px;
+    background: transparent;
+    padding: 4px 0;
+}
+
+/* カスタムスクロールバー */
+.news-box::-webkit-scrollbar {
+    width: 6px;
+}
+.news-box::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 8px 0;
+}
+.news-box::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--indigo), var(--cyan));
+    border-radius: 6px;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-.scroll__item {
+.news-item {
     display: flex;
-    border-bottom: solid dimgray 0.5px;
-    margin: 10px;
-    margin-left: -30px;
+    align-items: baseline;
+    gap: 12px;
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(60, 130, 246, 0.08);
+    transition: background 0.2s;
 }
 
-.scroll__item h3 {
-    margin: 5px;
-    width: 45px;
+.news-item:last-child {
+    border-bottom: none;
 }
 
-.scroll__item p {
-    margin: 5px;
-    margin-left: 70px;
+.news-item:hover {
+    background: rgba(60, 130, 246, 0.05);
 }
 
-.contact {
-    display: flex;
+.news-date {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+    min-width: 64px;
 }
 
-.map {
-    border-bottom: solid black 1.2px;
-    border-top: solid black 1.2px;
-    border-left: solid #0033CC 2px;
-    border-right: solid #0033CC 2px;
-    margin-left: auto;
-    margin-right: 65px;
-    margin-top: auto;
-}
-
-.section {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.table ul {
-    list-style-type: none;
-    margin-left: 20px;
-    margin-right: 65px; 
-}
-
-.table li {
-    border-bottom: solid dimgrey 1.2px;
-    border-left: solid black 2.4px;
-}
-
-.table a {
-    color: dodgerblue;
-    text-decoration: none;
-}
-
-.table a:hover {
-    text-decoration: underline;
-}
-
-.table h3 {
-    margin-left: 10px;
-}
-
-.table p {
-    margin-left: 20px;
-}
-
-.sidebar {
-    width: 20vw;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.sidebar__item h2 {
-    padding-top: 10px;
+.news-genre {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    min-width: 72px;
     text-align: center;
-    color: white;
-    text-decoration: underline;
+    display: inline-block;
 }
 
-.sidebar__item {
-    background-color: dimgrey;
-    position: sticky;
+.genre-publications {
+    background: rgba(59, 125, 232, 0.1);
+    color: #2563eb;
+}
+
+.genre-presentations {
+    background: rgba(245, 158, 11, 0.12);
+    color: #b45309;
+}
+.genre-award {
+    background: rgba(236, 72, 153, 0.1);
+    color: #db2777;
+}
+.genre-misc {
+    background: rgba(107, 114, 128, 0.1);
+    color: var(--text-light);
+}
+
+.news-content {
+    font-size: 0.95rem;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+/* ========== フッター ========== */
+footer {
+    background: #000000;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
     top: 0;
-    right: 0;
-    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--indigo), var(--cyan), var(--indigo), transparent);
+    background-size: 300% 100%;
+    animation: gradientSlide 8s ease infinite;
 }
 
-.sidebar__item li {
-    display: block;
-    list-style: None;
-    margin: 5px;
+/* ========== Canvas ========== */
+#backgroundCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
-.sidebar__item li a {
-    font-size: x-large;
-    text-decoration: none;
-    color: white;
-    display: block;    
+/* ========== レスポンシブ ========== */
+@media (max-width: 700px) {
+    .nav-flex {
+        flex-direction: column;
+        gap: 12px;
+    }
+    nav a {
+        margin-left: 16px;
+    }
+    main.container {
+        padding: 30px 20px;
+        margin-top: 20px;
+    }
 }
-
-.sidebar__item p a {
-  text-decoration: none;
-  color: white;
-}
-
-.sidebar__item a:hover{
-    font-weight: bolder;
-    color: yellow;
-}
-
-.footer {
-    background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    color: white;
-    height: 140px;
-    max-width: 100vw;
-}
-
-.footer h3 {
-    padding-top: 20px;
-}
-
-.footer p {
-    margin: 10px
-}
-
-.footer a {
-  text-decoration: none;
-  color: white;
-}
-.footer a:hover{
-  font-weight: bolder;
-  color: yellow;
-}
-  
-  /*==================================================
-  ふわっ
-  ===================================*/
-  
-  
-  /* fadeUp */
-  
-  .fadeUp{
-  animation-name:fadeUpAnime;
-  animation-duration:0.5s;
-  animation-fill-mode:forwards;
-  opacity:0;
-  }
-  
-  @keyframes fadeUpAnime{
-    from {
-      opacity: 0;
-    transform: translateY(100px);
-    }
-  
-    to {
-      opacity: 1;
-    transform: translateY(0);
-    }
-  }
-  
-  
-  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
-   
-  .fadeUpTrigger{
-      opacity: 0;
-  }
-
-  /*==================================================
-スーッ（枠線が伸びて出現）
-===================================*/
-
-/*枠線が伸びて出現*/
-
-.lineTrigger{
-    position: relative; /* 枠線が書かれる基点*/
-    opacity:0;
-  }
-  
-  .lineTrigger.lineanime{
-    animation-name:lineAnimeBase;
-    animation-duration:1s;
-    animation-fill-mode:forwards;
-  }
-  
-  @keyframes lineAnimeBase{
-    from {
-      opacity:0;
-    }
-  
-    to {
-      opacity:1;  
-  }
-  }
-  
-  /*上下線*/
-  .lineTrigger::before,
-  .lineTrigger::after{
-    position: absolute;
-    content:"";
-    width:0;
-    height:1.2px;
-    background: black;/* 枠線の色*/
-  }
-  
-  /*左右線*/
-  .line2::before,
-  .line2::after{
-    position: absolute;
-    content:"";
-    width: 3px;
-    height:0;
-    background:#0033CC;/* 枠線の色*/
-  }
-  
-  /*上線*/
-  .lineTrigger::before {
-    top:0;
-    left:0;
-  }
-  
-  .lineTrigger.lineanime::before {
-    animation: lineAnime .5s linear 0s forwards;/*表示されて0秒後に上線が0.5秒かけて表示*/
-  }
-  
-  /*右線*/
-  .line2::before{ 
-    top:0;
-    right:0;
-  }
-  
-  .lineTrigger.lineanime .line2::before {
-    animation: lineAnime2 .5s linear .5s forwards;/*表示されて0.5秒後に右線が0.5秒かけて表示*/
-  }
-  
-  /*下線*/
-  .lineTrigger::after { 
-    bottom:0;
-    right:0;
-  }
-  
-  .lineTrigger.lineanime::after {
-    animation: lineAnime .5s linear 1s forwards;/*表示されて1秒後に下線が0.5秒かけて表示*/
-  }
-  
-  /*左線*/
-  .line2::after{ 
-    bottom:0;
-    left:0;
-  }
-  
-  .lineTrigger.lineanime .line2::after {
-    animation: lineAnime2 .5s linear 1.5s forwards;/*表示されて1.5秒後に左線が0.5秒かけて表示*/
-  }
-  
-  @keyframes lineAnime {
-    0% {width:0%;}
-      100%{width:100%;}
-  }
-  
-  @keyframes lineAnime2 {
-    0% {height:0%;}
-      100%{height:100%;}
-  }
-  
-  /*枠線内側の要素*/
-  
-  .lineTrigger.lineanime .lineinappear{
-    animation: lineInnerAnime .5s linear 1.5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
-    opacity: 0;/*初期値を透過0にする*/ 
-  }
-  
-  @keyframes lineInnerAnime{
-    0% {opacity:0;}
-      100% {opacity:1;}
-  }
-
-/*==================================================
-パタッ
-===================================*/
-
-
-/* 下へ */
-.flipDown{
-    animation-name:flipDownAnime;
-    animation-duration:1s;
-    animation-fill-mode:forwards;
-    opacity:0;
-    }
-    
-    @keyframes flipDownAnime{
-      from {
-        transform: perspective(2500px) rotateX(100deg);
-      opacity: 0;
-      }
-    
-      to {
-        transform: perspective(2500px) rotateX(0);
-      opacity: 1;
-      }
-    }
-    
-    
-    /* 左へ */
-    .flipLeft{
-    animation-name:flipLeftAnime;
-    animation-duration:1s;
-    animation-fill-mode:forwards;
-    perspective-origin:left center;
-    opacity:0;
-    }
-    
-    @keyframes flipLeftAnime{
-      from {
-       transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
-      opacity: 0;
-      }
-    
-      to {
-      transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
-      opacity: 1;
-      }
-    }
-    
-    
-    /* 左上へ */
-    .flipLeftTop{
-    animation-name:flipLeftTopAnime;
-    animation-duration:1s;
-    animation-fill-mode:forwards;
-    opacity:0;
-    }
-    
-    @keyframes flipLeftTopAnime{
-      from {
-       transform: translate(-20px,80px) rotate(-15deg);
-      opacity: 0;
-      }
-    
-      to {
-       transform: translate(0,0) rotate(0deg);
-      opacity: 1;
-      }
-    }
-    
-    /* 右へ */
-    .flipRight{
-    animation-name:flipRightAnime;
-    animation-duration:1s;
-    animation-fill-mode:forwards;
-    perspective-origin:right center;
-    opacity:0;
-    }
-    
-    @keyframes flipRightAnime{
-      from {
-       transform: perspective(600px) translate3d(0, 0, 0) rotateY(-30deg);
-      opacity: 0;
-      }
-    
-      to {
-      transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
-      opacity: 1;
-      }
-    }
-    
-    /* 右上へ */
-    .flipRightTop{
-    animation-name:flipRightTopAnime;
-    animation-duration:1s;
-    animation-fill-mode:forwards;
-    opacity:0;
-    }
-    
-    @keyframes flipRightTopAnime{
-      from {
-       transform: translate(-20px,80px) rotate(25deg);
-       opacity: 0;
-      }
-    
-      to {
-       transform: translate(0,1) rotate(0deg);
-      opacity: 1;
-      }
-    }
-    
-    /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
-     
-    .flipDownTrigger,
-    .flipLeftTrigger,
-    .flipLeftTopTrigger,
-    .flipRightTrigger,
-    .flipRightTopTrigger{
-        opacity: 0;
-    }
-  
-/* アニメーションスタートの遅延時間を決めるCSS*/
-
-.delay-time05{  
-    animation-delay: 0.5s;
-  }
-
-.delay-time075{  
-    animation-delay: 0.75s;
-  }
-  
-.delay-time1{  
-    animation-delay: 1s;
-  }
-
-.delay-time125{  
-    animation-delay: 1.25s;
-  }
-
-.delay-time15{  
-    animation-delay: 1.5s;
-  }
-
-.delay-time175{  
-    animation-delay: 1.75s;
-  }
-  
-.delay-time2{  
-    animation-delay: 2s;
-  }
-
-.delay-time225{  
-    animation-delay: 2.25s;
-  }
-  
-.delay-time25{  
-    animation-delay: 2.5s;
-  }
-  

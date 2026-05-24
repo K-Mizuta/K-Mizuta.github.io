@@ -1,26 +1,4 @@
 {
-<<<<<<< HEAD
-  "inter_oral": [
-    {
-      "id": 1,
-      "title": "Scalable quantum error correction for surface codes",
-      "authors": "T. Yamada",
-      "conference": "QIP 2024",
-      "location": "Taipei, Taiwan",
-      "year": "2024",
-      "type": "conference",
-      "presentation": "oral"
-    },
-    {
-      "id": 2,
-      "title": "Quantum machine learning for drug discovery",
-      "authors": "T. Yamada, M. Suzuki",
-      "conference": "APS March Meeting 2024",
-      "location": "Minneapolis, USA",
-      "year": "2024",
-      "type": "conference",
-      "presentation": "invited"
-=======
   "oralint": [
     {
       "number": 12,
@@ -497,7 +475,6 @@
       "date": "2017年7月25-29日",
       "url": null,
       "note": null
->>>>>>> 4a115f4075254177b371896e9fab6650176e58bb
     }
   ]
 }

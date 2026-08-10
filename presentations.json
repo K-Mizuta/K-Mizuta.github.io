@@ -6,7 +6,7 @@
       "conference": "AQIS 2026",
       "place": "Daejeon, Korea",
       "date": "24-28, August 2026",
-      "url": null,
+      "url": "https://aqis-conf.org/2026/",
       "note": null
     },
     {
@@ -15,8 +15,8 @@
       "conference": "QSim 2025",
       "place": "New York, United States",
       "date": "4-8, August 2025",
-      "url": null,
-      "note": null
+      "url": "https://qsim2025.qsimconference.org/",
+      "note": "<a href='https://youtu.be/fW5BqWGRFjk?si=Ico7JnZIXY8EfpNZ'>YouTube</a>"
     },
     {
       "number": 11,
@@ -33,8 +33,8 @@
       "conference": "QIP2025",
       "place": "Raleigh, United States",
       "date": "22-28, February 2025",
-      "url": "https://youtu.be/rzTfEPwfPa4?si=V3Q2SgvrPW8QLsGI",
-      "note": null
+      "url": null,
+      "note": "<a href='https://youtu.be/rzTfEPwfPa4?si=V3Q2SgvrPW8QLsGI'>YouTube</a>"
     },
     {
       "number": 9,
@@ -69,7 +69,7 @@
       "conference": "QIP 2023",
       "place": "Ghent University, Belgium",
       "date": "4-10, February 2023",
-      "url": "https://youtu.be/aVNeDpPP20c?si=sfe0-RHyAJMgAaXU",
+      "url": "https://qip.iaqi.org/2023/",
       "note": "<a href='https://youtu.be/aVNeDpPP20c?si=sfe0-RHyAJMgAaXU'>YouTube</a>"
     },
     {
@@ -120,7 +120,70 @@
   ],
   "oraldom": [
     {
-      "number": 15,
+      "number": 23,
+      "title": "複数積公式によるハミルトニアンシミュレーションの計算複雑性",
+      "conference": "日本物理学会第81回年次大会",
+      "place": "東京大学, 東京",
+      "date": "2026年9月14-17日",
+      "url": null,
+      "note": null
+    },
+    {
+      "number": 22,
+      "title": "Hamiltonianシミュレーション",
+      "conference": "基研研究会「量子基礎・量子情報の新展開」",
+      "place": "京都大学, 京都",
+      "date": "2026年8月3-7日",
+      "url": "https://indico.yukawa.kyoto-u.ac.jp/event/88/",
+      "note": "チュートリアル講演"
+    },
+    {
+      "number": 21,
+      "title": "複数積公式によるハミルトニアンシミュレーションの効率性",
+      "conference": "QIT 54",
+      "place": "伊勢市, 三重",
+      "date": "2025年5月27-29日",
+      "url": "https://www.ieice.org/es/qit/qit54/",
+      "note": null
+    },
+    {
+      "number": 20,
+      "title": "低エネルギー状態に対するTrotter分解の効率性",
+      "conference": "日本物理学会2026年春季大会",
+      "place": "オンライン",
+      "date": "2026年3月23-26日",
+      "url": null,
+      "note": null
+    },
+    {
+      "number": 19,
+      "title": "時間依存系のトロッター誤差の理論",
+      "conference": "日本物理学会第80回年次大会",
+      "place": "広島大学, 広島",
+      "date": "2025年9月16-19日",
+      "url": null,
+      "note": null
+    },
+    {
+      "number": 18,
+      "title": "Trotter分解の低エネルギー状態に対する効率性",
+      "conference": "QIT 52",
+      "place": "静岡大学, 静岡",
+      "date": "2025年5月28-30日",
+      "url": "https://www.ieice.org/es/qit/qit52/",
+      "note": null
+    },
+    {
+      "number": 17,
+      "title": "非平衡量子多体ダイナミクスに対する最適な量子アルゴリズムの理論研究",
+      "conference": "日本物理学会2025年春季大会",
+      "place": "オンライン",
+      "date": "2025年3月18-21日",
+      "url": null,
+      "note": "若手奨励賞受賞記念講演"
+    },
+    {
+      "number": 16,
       "title": "非平衡量子系の物理に基づく最適な量子アルゴリズム",
       "conference": "日本物理学会第79回年次大会",
       "place": "北海道大学",
@@ -129,13 +192,22 @@
       "note": "シンポジウム講演"
     },
     {
-      "number": 14,
+      "number": 15,
       "title": "非平衡量子多体系の物理と最適な量子アルゴリズム",
       "conference": "第12回量子ソフトウェア研究会",
       "place": "大阪大学",
       "date": "2024年6月27-28日",
       "url": null,
       "note": "招待講演"
+    },
+    {
+      "number": 14,
+      "title": "再帰的手法による量子固有値変換/量子特異値変換",
+      "conference": "QIT 49",
+      "place": "OIST, 沖縄",
+      "date": "2023年12月17-19日",
+      "url": "https://www.ieice.org/es/qit/qit49/",
+      "note": null
     },
     {
       "number": 13,
@@ -256,6 +328,15 @@
     }
   ],
   "posterint": [
+    {
+      "number": 10,
+      "title": "On the commutator scaling in Hamiltonian simulation with multi-product formulas",
+      "conference": "QIP 2026",
+      "place": "Riga, Latvia",
+      "date": "24-30, January 2026",
+      "url": "https://qip2026.lu.lv/",
+      "note": null
+    },
     {
       "number": 9,
       "title": "Nearly-optimal quasienergy estimation and eigenstate preparation for time-periodic Hamiltonians",

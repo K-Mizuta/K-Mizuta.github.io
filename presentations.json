@@ -1,6 +1,15 @@
 {
   "oralint": [
     {
+      "number": 13,
+      "title": "On the commutator scaling in Hamiltonian simulation with multi-product formulas",
+      "conference": "AQIS 2026",
+      "place": "Daejeon, Korea",
+      "date": "24-28, August 2026",
+      "url": null,
+      "note": null
+    },
+    {
       "number": 12,
       "title": "Substantial efficiency of Trotterization for low-energy states",
       "conference": "QSim 2025",
@@ -24,7 +33,7 @@
       "conference": "QIP2025",
       "place": "Raleigh, United States",
       "date": "22-28, February 2025",
-      "url": "https://www.youtube.com/",
+      "url": "https://youtu.be/rzTfEPwfPa4?si=V3Q2SgvrPW8QLsGI",
       "note": null
     },
     {
@@ -60,8 +69,8 @@
       "conference": "QIP 2023",
       "place": "Ghent University, Belgium",
       "date": "4-10, February 2023",
-      "url": null,
-      "note": null
+      "url": "https://youtu.be/aVNeDpPP20c?si=sfe0-RHyAJMgAaXU",
+      "note": "<a href='https://youtu.be/aVNeDpPP20c?si=sfe0-RHyAJMgAaXU'>YouTube</a>"
     },
     {
       "number": 5,

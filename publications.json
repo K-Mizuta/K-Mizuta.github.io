@@ -29,7 +29,7 @@
       "links": [
         { "label": "arXiv:2504.20746 (2025)", "url": "https://arxiv.org/abs/2504.20746" }
       ],
-      "note": "Accepted in Phys. Rev. Lett."
+      "note": null
     },
     {
       "number": 17,
@@ -57,11 +57,12 @@
       "number": 15,
       "title": "Explicit error bounds with commutator scaling for time-dependent product and multi-product formulas",
       "authors": ["<strong>Kaoru Mizuta</strong>", "Tatsuhiko N. Ikeda", "Keisuke Fujii"],
-      "journal": null,
+      "journal": "Phys. Rev. Lett. 135, 130602 (2025)",
       "links": [
+        { "label": "Phys. Rev. Lett. 135, 130602 (2025)", "url": "https://journals.aps.org/prl/abstract/10.1103/q87n-5xhz"},
         { "label": "arXiv:2410.14243 (2024)", "url": "https://arxiv.org/abs/2410.14243" }
       ],
-      "note": null
+      "note": "<a href=\"https://www.t.u-tokyo.ac.jp/press/pr2025-09-25-002\">Press Release</a>"
     },
     {
       "number": 14,

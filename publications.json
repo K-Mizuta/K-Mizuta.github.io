@@ -1,6 +1,17 @@
 {
   "refereed": [
     {
+      "number": 21,
+      "title": "Lattice Lindbladian simulation by patching and merging",
+      "authors": ["<strong>Kaoru Mizuta</strong>"],
+      "journal": null,
+      "links": [
+        { "label": "arXiv:2609.26372 (2026)", "url": "https://arxiv.org/abs/26039.26372" }
+      ],
+      "note": null
+    },
+
+    {
       "number": 20,
       "title": "Quantum signal processing in Hilbert space fragmented systems",
       "authors": ["Naoya Egawa, <strong>Kaoru Mizuta</strong>, Joji Nasu"],

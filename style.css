@@ -413,6 +413,251 @@ footer::before {
     z-index: -1;
 }
 
+/* ========== ナビ：現在のページ ========== */
+nav a.active {
+    color: #ffffff;
+}
+
+nav a.active::after {
+    width: 100%;
+}
+
+/* ========== メンバー ========== */
+.member-lead {
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+/* カードは1人1行で縦に並べる。高さは下の変数で全員共通 */
+.member-grid {
+    --member-card-height: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 12px 0 8px;
+}
+
+.member-card {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: var(--member-card-height);
+    overflow: hidden;
+    padding: 20px 26px;
+    border: 1px solid rgba(60, 130, 246, 0.12);
+    border-left: 3px solid var(--indigo);
+    border-radius: 0 12px 12px 0;
+    background: rgba(60, 130, 246, 0.04);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.member-card:hover {
+    background: rgba(60, 130, 246, 0.08);
+    transform: translateY(-2px);
+}
+
+/* 写真（img）または頭文字アイコン（div） */
+.member-photo {
+    flex-shrink: 0;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(56, 189, 248, 0.35);
+    box-sizing: border-box;
+}
+
+.member-photo--initial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(59, 125, 232, 0.28), rgba(56, 189, 248, 0.12));
+    font-family: "Outfit", "Hiragino Mincho ProN", serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--blue-light);
+}
+
+.member-info {
+    min-width: 0;
+}
+
+.member-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.member-name-en {
+    display: block;
+    font-family: "Outfit", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-light);
+    letter-spacing: 0.5px;
+}
+
+.member-role {
+    display: inline-block;
+    font-family: "Outfit", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 2px 10px;
+    margin: 8px 0 4px;
+    border-radius: 20px;
+    background: rgba(59, 125, 232, 0.14);
+    color: var(--blue-light);
+}
+
+.member-role--student {
+    background: rgba(56, 189, 248, 0.12);
+    color: var(--cyan);
+}
+
+/* 固定の高さからはみ出さないよう、研究テーマは最大2行で省略 */
+.member-topic {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.65;
+    margin-top: 4px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+.member-links {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.85rem;
+    margin-top: 8px;
+}
+
+.member-links a {
+    text-decoration: none;
+    margin-right: 14px;
+    white-space: nowrap;
+}
+
+/* 募集中カード */
+.member-card--open {
+    align-items: center;
+    border-style: dashed;
+    border-left-style: solid;
+    background: transparent;
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+.main-body a.member-card--open:hover {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.member-card--open .member-photo--initial {
+    background: transparent;
+    border-style: dashed;
+    font-weight: 300;
+}
+
+/* ビジター：メンバーより小さめのカード */
+.member-grid--visitor {
+    --member-card-height: 120px;
+    gap: 12px;
+}
+
+.member-grid--visitor .member-card {
+    gap: 20px;
+    padding: 14px 22px;
+}
+
+.member-grid--visitor .member-photo {
+    width: 72px;
+    height: 72px;
+    font-size: 1.7rem;
+}
+
+.member-grid--visitor .member-name {
+    font-size: 1.15rem;
+}
+
+.member-role--visitor {
+    background: rgba(245, 158, 11, 0.12);
+    color: #fbbf24;
+}
+
+.member-grid--visitor .member-info {
+    flex: 1;
+}
+
+/* バッジ ＋ 所属・滞在期間（1行に収め、長い場合は「…」で省略） */
+.member-visit-row {
+    display: flex;
+    align-items: center;
+    gap: 4px 10px;
+    margin-top: 6px;
+    min-width: 0;
+}
+
+.member-visit-row .member-role {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.member-visit {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 過去のメンバー */
+.alumni-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+    border: 1px solid rgba(60, 130, 246, 0.12);
+    border-radius: 12px;
+}
+
+.alumni-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 16px;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(60, 130, 246, 0.08);
+}
+
+.alumni-item:last-child {
+    border-bottom: none;
+}
+
+.alumni-period {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    min-width: 110px;
+}
+
+.alumni-name {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.alumni-now {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
 /* ========== レスポンシブ ========== */
 @media (max-width: 700px) {
     .nav-flex {
@@ -425,5 +670,43 @@ footer::before {
     main.container {
         padding: 30px 20px;
         margin-top: 20px;
+    }
+    .member-grid {
+        --member-card-height: 260px;
+    }
+    .member-card {
+        gap: 16px;
+        padding: 18px 18px;
+    }
+    .member-photo {
+        width: 64px;
+        height: 64px;
+        font-size: 1.6rem;
+    }
+    .member-name {
+        font-size: 1.25rem;
+    }
+    .member-grid--visitor {
+        --member-card-height: 150px;
+    }
+    .member-grid--visitor .member-card {
+        gap: 14px;
+        padding: 14px 16px;
+    }
+    .member-grid--visitor .member-photo {
+        width: 52px;
+        height: 52px;
+        font-size: 1.3rem;
+    }
+    .member-grid--visitor .member-name {
+        font-size: 1.05rem;
+    }
+    .member-visit-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .member-visit {
+        flex: none;
+        width: 100%;
     }
 }

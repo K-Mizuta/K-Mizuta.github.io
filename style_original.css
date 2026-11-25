@@ -1,0 +1,429 @@
+/* Modern Academic Style — QIQB-Inspired Light Blue */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+    --navy: #0f2b5b;
+    --navy-mid: #1a3a6e;
+    --indigo: #3b7de8;
+    --blue-bright: #4a8af4;
+    --blue-light: #93c5fd;
+    --cyan: #38bdf8;
+    --text: #e2e8f0;
+    --text-light: #94a3b8;
+    --text-muted: #64748b;
+    --glass-bg: transparent;
+    --glass-border: rgba(56, 189, 248, 0.15);
+}
+
+body {
+    font-family: "Source Serif 4", Georgia, "Hiragino Mincho ProN", serif;
+    line-height: 1.85;
+    color: var(--text);
+    margin: 0;
+    background-color: #0a0a0a;
+    overflow-x: hidden;
+}
+
+[id] {
+  scroll-margin-top: 80px; /* ヘッダーの高さに合わせて調整 */
+}
+
+/* ========== ヒーローバナー ========== */
+.hero-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1001;
+    background: #000000;
+}
+
+.hero-banner img {
+    width: 100%;
+    display: block;
+}
+
+/* ========== ヘッダー：ライトグラスモーフィズム ========== */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #000000;
+    border-bottom: none;
+    padding: 18px 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ヘッダー上部のグラデーションライン */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--indigo), var(--cyan), var(--indigo), transparent);
+    background-size: 300% 100%;
+    animation: gradientSlide 8s ease infinite;
+}
+
+/* ヘッダー下部のグラデーションライン */
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--indigo), var(--cyan), var(--indigo), transparent);
+    background-size: 300% 100%;
+    animation: gradientSlide 8s ease infinite;
+}
+
+header.scrolled::after {
+    height: 2px;
+}
+
+@keyframes gradientSlide {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* スクロール時のヘッダー変化 */
+header.scrolled {
+    background: #000000;
+    padding: 12px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.main-body a {
+    color: var(--indigo);
+}
+
+.main-body a:hover {
+    color: var(--cyan);
+    text-decoration: underline;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.site-title:hover {
+    color: var(--cyan);
+}
+
+.site-title .accent {
+    color: var(--indigo);
+    font-size: 1.2em;
+}
+
+.name-home {
+    font-size: 1.8rem;
+}
+
+.accent {
+    color: var(--indigo);
+    font-size: 1.2em;
+}
+
+nav a {
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    margin-left: 32px;
+    font-size: 0.88rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--indigo), var(--cyan));
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ========== メインセクション ========== */
+main {
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+    margin-top: -4px;
+}
+
+main.container {
+    background: transparent;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 20px 20px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: none;
+}
+
+h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #ffffff;
+    border-bottom: none;
+    padding-bottom: 8px;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin-top: 0px;
+    background: linear-gradient(90deg, var(--indigo), var(--cyan));
+    border-radius: 3px;
+}
+
+.first-section h2 {
+    margin-top: 0px;
+}
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.25rem;
+    color: var(--indigo);
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+p {
+    color: var(--text);
+    margin: 0px;
+}
+
+strong {
+    color: #e2e8f0;
+}
+
+/* リスト・論文スタイル */
+.pub-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pub-item {
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border-left: 3px solid var(--indigo);
+    background: rgba(60, 130, 246, 0.04);
+    border-radius: 0 8px 8px 0;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.pub-item:hover {
+    background: rgba(60, 130, 246, 0.08);
+    transform: translateX(4px);
+}
+
+.pub-title { font-weight: bold; display: block; color: #e2e8f0; }
+.pub-meta { font-size: 0.95rem; color: var(--text-light); }
+.pub-meta a {
+    color: var(--indigo);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.pub-meta a:hover {
+    color: var(--cyan);
+    text-decoration: underline;
+}
+.pub-number {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: var(--indigo);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* ========== News ボックス（スクロール付き） ========== */
+.news-box {
+    max-height: 360px;
+    overflow-y: auto;
+    border: 1px solid rgba(60, 130, 246, 0.12);
+    border-radius: 12px;
+    background: transparent;
+    padding: 4px 0;
+}
+
+/* カスタムスクロールバー */
+.news-box::-webkit-scrollbar {
+    width: 6px;
+}
+.news-box::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 8px 0;
+}
+.news-box::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--indigo), var(--cyan));
+    border-radius: 6px;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-item {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(60, 130, 246, 0.08);
+    transition: background 0.2s;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item:hover {
+    background: rgba(60, 130, 246, 0.05);
+}
+
+.news-date {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+    min-width: 64px;
+}
+
+.news-genre {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    min-width: 72px;
+    text-align: center;
+    display: inline-block;
+}
+
+.genre-publications {
+    background: rgba(59, 125, 232, 0.1);
+    color: #2563eb;
+}
+
+.genre-presentations {
+    background: rgba(245, 158, 11, 0.12);
+    color: #b45309;
+}
+.genre-award {
+    background: rgba(236, 72, 153, 0.1);
+    color: #db2777;
+}
+.genre-misc {
+    background: rgba(107, 114, 128, 0.1);
+    color: var(--text-light);
+}
+
+.news-content {
+    font-size: 0.95rem;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+/* ========== フッター ========== */
+footer {
+    background: #000000;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--indigo), var(--cyan), var(--indigo), transparent);
+    background-size: 300% 100%;
+    animation: gradientSlide 8s ease infinite;
+}
+
+/* ========== Canvas ========== */
+#backgroundCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* ========== レスポンシブ ========== */
+@media (max-width: 700px) {
+    .nav-flex {
+        flex-direction: column;
+        gap: 12px;
+    }
+    nav a {
+        margin-left: 16px;
+    }
+    main.container {
+        padding: 30px 20px;
+        margin-top: 20px;
+    }
+}
